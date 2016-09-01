@@ -3,3 +3,7 @@ What happens when you initialize a repository? Why do you need to do it?
 creates a directory of initial directories and files
 seems like it ought to do an initial commit with what's there, but, oh well, no.  The reason given is that you can't give your comments.  So what, create it anyway.
 
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The working directory is where the files are that are to be committed.  The repository is where the meta data is stored indicating what changes have occurred to the files in the working directory.  The staging area is where you accumulate a set of file names which are to be committed are accumulated.
