@@ -1,0 +1,38 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+I thought diff was the usual UNIX crappy app.
+It has to be abstruse and contorted doesn't it?
+It does, nevertheless, give enough information to see the differences.
+So it gets a passing grade for that, I guess.
+The HP NonStop system has great and straightforward utilities.  So it is simple to use.
+It shows you precisely where the differences are by using carets.
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+There are times when you want to know what an earlier change was so that you can see if it caused the current problem your having or maybe is involved in it.
+In the old days we had to manually document changes as comments in the programs themselves.  This sometimes posed problems when trying to solve issues global to a set of programs.
+I never cared for the versioning systems that saved changes incrementally.  Often these systems only allowed you to view the increments and not the context of the increments.  It was more burdensome to use than no versioning at all.
+I wonder what Git does?
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+The pros are that it allows each programmer flexibility in choosing intervals.  It also will probably prevent intervals which are way too small.  The cons are that people will probably have intervals which are too large.  It seems to me that the size can be larger than the instructors wan to allow.  I think they confuse the commit interval with the editor save interval in many cases.  The commits should reflect a feature of the software, or a complete bug fix, or some such logical package, not a series of minor changes that are ridiculous to wade through.
+Commits should be allowed across program boundaries too, though perhaps in addition to and above single program changes.  So if there's a new feature which is large enough to require modifications to a number of programs they are all linked together in a commit.
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Different purposes mostly.  Unless the separate file type software was written by simpletons -- yup there are a lot of them out there.
+Software changes often require changes in multiple places.  If you want to back out a bad change, it is much easier if you can back them all out in one swell foop.  Otherwise, the backing out itself will probably be done incorrectly.  What a mess then.
+
+
+How might using version control make you more confident to make changes that could break something?
+
+Not much.  In order to code well misakes must be kept to a minimum.  Version control is a fail safe.  It is also a way of segmenting revision levels for distribution to end users and larger releases as groups of changes.  Thus some users can be on one release and others on other releases.  These could be updated further independently.
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+My Swift projects and any others like Java.
